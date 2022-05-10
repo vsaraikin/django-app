@@ -2,10 +2,11 @@ from django.shortcuts import render
 import requests
 from .models import City
 from .forms import CityForm
+from config_file import API_KEY
 
 
 def index(request):
-    url = 'http://api.openweathermap.org/data/2.5/weather?q={}&units=imperial&appid=b83d6195011516c807a895d59fb8a8a0'
+    url = 'http://api.openweathermap.org/data/2.5/weather?q={}&units=imperial&appid=' + API_KEY
 
     cities = City.objects.all()  # return all the cities in the database
 
