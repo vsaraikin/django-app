@@ -2,7 +2,7 @@
 
 Download the project:
 
-``git clone https://github.com/vsaraikin/django-app``
+```git clone https://github.com/vsaraikin/django-app```
 
 Create and activate `venv` via conda:
 
